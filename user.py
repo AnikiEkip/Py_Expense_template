@@ -4,5 +4,7 @@ user_questions = [
 ]
 
 def add_user():
-    # This function should create a new user, asking for its name
-    return
+    name = input('What is your user name?\n')
+    f = open("users.csv", "a")
+    f.write(name)
+    f.close()
